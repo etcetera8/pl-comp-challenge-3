@@ -1,3 +1,170 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
 }
+
+/*Navigation Drawer*/
+.navbar {
+  float:left;
+  background-color: #2D3E49;
+  width:220px;
+}
+
+/*For all three sections of drawer*/
+.nav {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #171e23;
+  padding-bottom: 20px;
+}
+
+/*For all lists in nav*/
+.nav-list {
+  list-style: none;
+  color: #c4c4c4;
+  margin:0;
+  padding:0;
+}
+
+.nav-list li {
+  padding: 1px 0 1px 0;
+  transition: background 0.5s,
+              color 0.5s,
+              border-left 0.5s;  
+}
+
+.nav-list li:hover {
+  background: #455866;
+  border-left:3px solid #378dcc;
+  color: #fff;
+}
+
+.nav-list li:focus {
+  color: lime; 
+}  
+
+/*for all figs*/
+figure {
+  margin-right: 0;
+}
+
+figcaption {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/*for all nav section titls*/
+.nav-section-title {
+  margin: 35px 0 10px 43px;
+  color: gray;
+}
+
+.user-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic{
+  border-radius:50%;
+  background-image: url("images/deniro.jpg");
+  background-size: cover;
+  width: 125px;
+  height: 125px;
+  margin: 25px auto;
+}
+
+.profile-name {
+  margin: 0 auto 25px auto;
+  color: white;
+}
+
+/*checkboxes grr...*/
+#c1 {
+
+}
+
+#c2 {
+  color: blue; 
+  background: blue;
+  border-radius: 15%;
+  height: .65em;
+}
+
+#c3 {
+  color: red; 
+  background: red;
+  border-radius: 15%;
+  height: .65em;
+}
+
+#c4 {
+  color: green; 
+  background: green;
+  border-radius: 15%;
+  height: .65em;
+}
+
+/*Search bar at top*/
+.search-page {
+  border: 1px solid #c4c4c4;
+}
+
+.fa-bars {
+  margin: 0px 15px 0px 15px;
+}
+
+.search-page {
+ display: flex;
+ align-items: center;
+ height: 60px;
+}
+
+#hamburger-div {
+  margin-right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #c4c4c4;
+  border-right:1px solid #c4c4c4;
+  transition: background 0.5s,
+              color 0.5s;  
+}
+
+#hamburger-div:hover {
+  background: #51adef;
+  color: #fff;  
+}
+
+#search-bar {
+  flex:1;
+  border: none;
+  width: 500px;
+  padding-left: 5px;
+}
+
+#sq-wrapper {
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sq {
+  margin:0;
+  border-left:1px solid #c4c4c4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0 15px;
+  color:#c4c4c4;
+  transition: background 0.5s,
+              color 0.5s;
+}
+
+.nav-sq:hover {
+  background: #51adef;
+  color: #fff;
+  cursor: pointer;
+}
+
+
