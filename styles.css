@@ -211,6 +211,18 @@ main {
   margin:0;
 }
 
+#open-status {
+  border: 1px solid #171e23;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  padding:2px;
+
+}
+
+.fa-circle {
+  color:green;
+}
 .rando-icons li {
   display:inline;
   margin: 0 15px;
