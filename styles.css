@@ -64,7 +64,7 @@ figcaption {
 /*for all nav section titls*/
 .nav-section-title {
   margin: 35px 0 10px 43px;
-  color: gray;
+  color: #666;
 }
 
 .user-nav {
@@ -181,21 +181,39 @@ main {
 }
 
 /*Persons Public Title*/
+.job-info {
+  margin: 45px;
+}
+
 .job-title {
-  margin: 25px 0 5px 50px;
+  color:#666;
+  margin-bottom: 20px;
   display: block;
+}
+.location-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .location {
-  display: inline;
-  margin: 0;
+  color: #666;
+  margin:0;
+}
+
+.location a {
+  text-decoration: none;
+  color: #63bbf9;
 }
 
 .rando-icons {
+  color: #666;
   list-style: none;
-  display: inline-block;
+  margin:0;
 }
 
 .rando-icons li {
   display:inline;
+  margin: 0 15px;
 }
+
+
