@@ -1,6 +1,7 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 20px;
+  display: flex;
 }
 
 /*Navigation Drawer*/
@@ -8,6 +9,13 @@ body {
   float:left;
   background-color: #2D3E49;
   width:220px;
+  flex:1;
+}
+
+.navbar:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*For all three sections of drawer*/
@@ -104,6 +112,10 @@ figcaption {
   height: .65em;
 }
 
+main {
+ flex:4.5;
+}
+
 /*Search bar at top*/
 .search-page {
   border: 1px solid #c4c4c4;
@@ -121,6 +133,7 @@ figcaption {
 
 #hamburger-div {
   margin-right: 0;
+  padding: 0 10px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -138,7 +151,7 @@ figcaption {
 #search-bar {
   flex:1;
   border: none;
-  width: 500px;
+  width: 270px;
   padding-left: 5px;
 }
 
@@ -155,7 +168,7 @@ figcaption {
   height: 100%;
   display: flex;
   align-items: center;
-  padding:0 15px;
+  padding:0 22px;
   color:#c4c4c4;
   transition: background 0.5s,
               color 0.5s;
@@ -167,4 +180,22 @@ figcaption {
   cursor: pointer;
 }
 
+/*Persons Public Title*/
+.job-title {
+  margin: 25px 0 5px 50px;
+  display: block;
+}
 
+.location {
+  display: inline;
+  margin: 0;
+}
+
+.rando-icons {
+  list-style: none;
+  display: inline-block;
+}
+
+.rando-icons li {
+  display:inline;
+}
