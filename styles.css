@@ -187,7 +187,7 @@ main {
 
 .job-title {
   color:#666;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   display: block;
 }
 .location-list {
@@ -196,6 +196,7 @@ main {
 }
 
 .location {
+  align-self: center;
   color: #666;
   margin:0;
 }
@@ -212,20 +213,32 @@ main {
 }
 
 #open-status {
-  border: 1px solid #171e23;
+  display: flex-inline;
+  border: 3.5px solid #c4c4c4;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
-  border-radius: 16px;
-  padding:2px;
-
+  border-radius: 22px;
+  padding: 8px 15px 5px 12px;
+  align-items: center;
+  margin: 0;
 }
 
 .fa-circle {
   color:green;
+  margin: 6px;
 }
+
 .rando-icons li {
   display:inline;
-  margin: 0 15px;
+  margin: 0 4px;
+  color: #c4c4c4;
 }
+
+.fa-bookmark:before,
+.fa-pencil:before,
+.fa-trash {
+    color:#666;
+}
+
 
 
