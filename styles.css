@@ -207,11 +207,11 @@ main {
 }
 
 #open-status {
-  border: 3.5px solid #c4c4c4;
+  border: 3px solid #c4c4c4;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 22px;
-  padding: 8px 15px 5px 12px;
+  padding: 8px 15px 6px 12px;
   margin: 0;
 }
 
@@ -224,6 +224,7 @@ main {
   display:inline;
   margin: 0 4px;
   color: #c4c4c4;
+  font-size: .7em;
 }
 
 .fa-bookmark:before,
@@ -382,8 +383,6 @@ th {
   padding: 10px 0px 10px 10px;
   text-align: left;
   border:10px solid #3a505e;
-  
-
 }
 
 .edit-btn {
@@ -407,9 +406,7 @@ th {
 
 tr {
   border-bottom:1px solid #c4c4c4;
-
 }
-
 
 td {
   padding:20px 0px 20px 20px;
@@ -434,4 +431,27 @@ td {
 .social {
   flex:1;
 }
+
+.social-btn-style {
+  display: block;
+  color:white;
+  border-radius:3px;
+  width: 90%;
+  margin:0 0 10px auto;
+  height: 50px;
+  font-size: .8em;
+}
+
+.fb-btn {
+  background:#4768AD;
+}
+
+.twitter-btn {
+  background:#46A1EC;
+}
+
+.linkedIn-btn {
+  background:#2C72AC;
+}
+
 
