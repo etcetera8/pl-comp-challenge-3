@@ -4,6 +4,10 @@ body {
   display: flex;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 /*Navigation Drawer*/
 .navbar {
   float:left;
@@ -39,7 +43,6 @@ body {
   transition: background 0.5s,
               color 0.5s,
               border-left 0.5s;
-
 }
 
 .nav-list li:hover {
@@ -324,6 +327,8 @@ main {
   border-radius:25px;
 }
 
+/*Toggle Graph button border*/
+
 h2 {
   overflow: hidden;
   text-align: center;
@@ -352,4 +357,83 @@ h2:after {
 
 .fa-chevron-circle-up {
   color: #c4c4c4;
+  transition: color 0.5s;
 }
+
+.fa-chevron-circle-up:hover {
+  color: #666;
+}
+
+/*JOB DESCRIPTION*/
+#job-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-table {
+  flex:2;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    padding:20px;
+    background: #fff;
+}
+
+th {
+  background: #3a505e;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: .5em;
+  color: #c4c4c4;
+  padding: 10px 0px 10px 10px;
+  text-align: left;
+}
+
+.edit-btn {
+  background: #567689;
+  color: #c4c4c4;
+  border:none;
+}
+
+.edit-btn i{
+  color: #c4c4c4;
+}
+
+.edit-btn-fig {
+  margin:5px;
+}
+
+#pencil:before {
+  color: #c4c4c4;
+  margin-right: auto;
+}
+
+tr {
+  border-bottom:1px solid #c4c4c4;
+}
+
+td {
+  padding:20px 0px 20px 20px;
+  vertical-align: middle;
+}
+
+.col-1 {
+  width:125px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: 0.5em;
+  color: #666;
+}
+
+.col-2 {
+  font-size: .8em;
+  color: #666;
+}
+
+.social {
+  flex:1;
+}
+
