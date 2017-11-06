@@ -12,8 +12,7 @@ body {
 .navbar {
   float:left;
   background-color: #2D3E49;
-  width:220px;
-  flex:1;
+  width:230px;
 }
 
 .navbar:after {
@@ -132,7 +131,6 @@ main {
 }
 
 #hamburger-div {
-  margin-right: 0;
   padding: 0 10px;
   height: 100%;
   display: flex;
@@ -159,13 +157,11 @@ main {
   margin-left: auto;
   height: 100%;
   display: flex;
-  align-items: center;
 }
 
 .nav-sq {
   margin:0;
   border-left:1px solid #c4c4c4;
-  height: 100%;
   display: flex;
   align-items: center;
   padding:0 22px;
@@ -188,7 +184,6 @@ main {
 .job-title {
   color:#666;
   margin-bottom: 0;
-  display: block;
 }
 .location-list {
   display: flex;
@@ -208,18 +203,15 @@ main {
 
 .rando-icons {
   color: #666;
-  list-style: none;
   margin:0;
 }
 
 #open-status {
-  display: flex-inline;
   border: 3.5px solid #c4c4c4;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 22px;
   padding: 8px 15px 5px 12px;
-  align-items: center;
   margin: 0;
 }
 
@@ -301,7 +293,6 @@ main {
 
 .circ-text {
   display: flex;
-  align-content: center;
   justify-content: center;
   align-items: center;
   width:100px;
@@ -390,6 +381,9 @@ th {
   color: #c4c4c4;
   padding: 10px 0px 10px 10px;
   text-align: left;
+  border:10px solid #3a505e;
+  
+
 }
 
 .edit-btn {
@@ -413,7 +407,9 @@ th {
 
 tr {
   border-bottom:1px solid #c4c4c4;
+
 }
+
 
 td {
   padding:20px 0px 20px 20px;
@@ -426,11 +422,13 @@ td {
   font-weight: 900;
   font-size: 0.5em;
   color: #666;
+  border-left: 10px solid #fff;
 }
 
 .col-2 {
   font-size: .8em;
   color: #666;
+  border-right: 10px solid #fff;
 }
 
 .social {
