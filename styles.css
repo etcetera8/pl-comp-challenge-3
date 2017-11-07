@@ -428,6 +428,8 @@ td {
   border-right: 10px solid #fff;
 }
 
+/*Social sharing and share links*/
+
 .social {
   flex:1;
 }
@@ -438,8 +440,8 @@ td {
   border-radius:3px;
   width: 90%;
   margin:0 0 10px auto;
-  height: 50px;
-  font-size: .8em;
+  height: 40px;
+  font-size: .7em;
 }
 
 .fb-btn {
@@ -454,4 +456,68 @@ td {
   background:#2C72AC;
 }
 
+/*Share Links*/
 
+.share-manual {
+    width: 90%;
+    margin: 25px 0 20px auto;
+    padding-bottom: 20px;
+}
+
+.job-link {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.widget-link{
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.link-head {
+  display: inline;
+  margin-left: 10px;
+  font-size: .9em;
+  color:#666;
+}
+
+.share-fa:before {
+  font-size: .8em;
+  color:#666;
+}
+
+.share-info {
+  font-size: .7em;
+  color:#666;
+  margin-bottom:20px;
+}
+
+.share-link-wrapper {
+  display: flex;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+.share-link{
+  border:none;
+  height: 100%;
+  width:75%;
+  font-size: .7em;
+  padding-left: 10px;
+  color:#666;
+}
+
+.copy-btn {
+  border: none;
+  background: #6bc6ae;
+  color:white;
+  padding:0 15px;
+  font-size: .6em;
+  height: 100%;
+  width:25%;
+}
+
+.email-resume{
+  width: 100%;
+  height: 40px;
+}
