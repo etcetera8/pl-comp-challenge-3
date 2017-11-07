@@ -696,7 +696,9 @@ td {
   .social {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 40px;
   }
+
   .social-btn-style {
     margin:20px auto;
     width: 100%;
@@ -717,11 +719,11 @@ td {
   }
 
   #details {
-    padding:50px 10px;
+    padding:50px 20px;
   }
 
   #graph-list {
-    padding-left: 15px;
+    padding-left: 20px;
   }
 
   main {
