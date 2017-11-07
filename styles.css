@@ -10,9 +10,10 @@ body {
 
 /*Navigation Drawer*/
 .navbar {
-  float:left;
   background-color: #2D3E49;
   width:230px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar:after {
@@ -231,7 +232,7 @@ input::-webkit-input-placeholder {
 }
 
 .fa-circle {
-  color:green;
+  color:#26d80a;
   margin: 6px;
 }
 
@@ -279,7 +280,6 @@ input::-webkit-input-placeholder {
 
 #details {
   background: #edf2f6;
-  margin-top: 15px;
   padding: 50px;
 }
 
@@ -307,6 +307,8 @@ input::-webkit-input-placeholder {
   border: 12px solid #3D97E9;
   border-left-color:#c4c4c4;
   border-top-color:#c4c4c4;
+  margin: 0 1px;
+
 }
 
 .circle-c {
@@ -365,7 +367,10 @@ img {
   padding: 7px;
   border-radius:25px;
   width:16%;
-  
+}
+
+.total-btns-alt {
+  display:none;
 }
 
 /*Toggle Graph button border*/
@@ -610,26 +615,119 @@ td {
 
   .graph-li {
     display: inline;
-    padding-bottom:15px;
+    padding-bottom: 22px;
     margin-right: 15px;
     border-bottom: none;
   }
 
+  .graph-li:hover, .target {
+    border-bottom: none;
+    color: #666;
+  }
+  
   #graph-display {
     flex-direction: column-reverse;
   }
 
+  .bar-graph {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
   .circle-graphs {
     margin-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .target-wrapper {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .buttons {
-    display: flex;
+    display: none;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .total-btns{
     width:100%;
   }
+
+  .total-btns-alt {
+    align-self: center;
+    display: inline-block;
+    font-size: .6em;
+    font-weight: 900;
+    color:#666;
+    padding: 7px;
+    border-radius:25px;
+    width:25%;
+    margin-top:35px;
+  }
+}
+
+@media (max-width: 845px) {
+
+  .location-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .location {
+    margin-top: 10px;
+    margin-right: auto;
+  }
+
+  .rando-icons {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  #job-description {
+    flex-direction: column;
+}
+  
+  .social {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social-btn-style {
+    margin:20px auto;
+    width: 100%;
+  }
+
+  .share-manual {
+    margin:20px auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 785px) {
+
+  .navbar {
+    display:none;
+    min-width:75%;
+    flex:2;
+  }
+
+  #details {
+    padding:50px 10px;
+  }
+
+  #graph-list {
+    padding-left: 15px;
+  }
+
+  main {
+    flex:1;
+    position: absolute;
+    z-index: -1;
+  }
+
 }

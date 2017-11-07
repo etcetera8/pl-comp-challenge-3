@@ -5,3 +5,7 @@ $('#hamburger-div').on('click', function() {
 $('.fa-chevron-circle-up').on('click', function() {
   $('#graph-display, .buttons').slideToggle('slow');
 })
+
+$('.navbar').on('click', function() {
+  $('.navbar').slideToggle('fast')
+})
