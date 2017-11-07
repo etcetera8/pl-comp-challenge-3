@@ -293,40 +293,62 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction:row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .circle-a {
-  border: 9px solid green;
-  border-right-color: gray;
+  border: 12px solid #60BFA4;
+  border-right-color: #c4c4c4;
 }
 
 
 .circle-b {
-  border: 9px solid blue;
-  border-left-color: gray;
-  border-top-color:gray;
+  border: 12px solid #3D97E9;
+  border-left-color:#c4c4c4;
+  border-top-color:#c4c4c4;
 }
 
 .circle-c {
-  border: 9px solid purple;
-  border-left-color:gray;
+  border: 12px solid #c16be5;
+  border-left-color:#c4c4c4;
 }
 
 .circ-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:125px;
-  height: 125px;
+  flex-direction: column;
+  width:150px;
+  height: 150px;
   border-radius: 50%;
 }
 
-.bar-graph {
-  flex: 1;
-  background-image: url("images/bargraph.png");
-  background-size: cover;
+.nums {
+  margin: 5px 0;
+  font-size: 1.5em;
+  font-family: 'Saira', sans-serif;
+  color:#444;
 }
 
+.num-stats {
+  margin:0;
+  font-size: .6em;
+  color:#444;
+  font-weight: bold;
+
+}
+
+
+.bar-graph {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width:50%;
+}
 .buttons {
   display: flex;
   justify-content: space-around;
