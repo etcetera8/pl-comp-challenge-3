@@ -28,6 +28,9 @@ body {
   flex-direction: column;
   border-bottom: 1px solid #253038;
   padding-bottom: 20px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: .9em;
 }
 
 /*For all lists in nav*/
