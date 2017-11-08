@@ -399,7 +399,6 @@ h2:after {
 /*JOB DESCRIPTION*/
 #job-description {
   display: flex;
-  flex-direction: row;
 }
 
 .job-table {
@@ -409,14 +408,12 @@ h2:after {
 table {
     display: table;
     border-collapse: collapse;
-    border-spacing: 2px;
     background: #fff;
 }
 
 th {
   background: #3a505e;
   font-family: 'Exo', sans-serif;
-  font-weight: 900;
   font-size: .5em;
   color: #c4c4c4;
   padding: 10px 0px 10px 10px;
@@ -428,10 +425,6 @@ th {
   background: #567689;
   color: #c4c4c4;
   border: none;
-}
-
-.edit-btn i {
-  color: #c4c4c4;
 }
 
 .edit-btn-fig {
@@ -554,7 +547,6 @@ td {
 
 .share-link {
   border: none;
-  height: 100%;
   width: 75%;
   font-size: .7em;
   padding-left: 10px;
@@ -567,7 +559,6 @@ td {
   color: #fff;
   padding: 0 15px;
   font-size: .6em;
-  height: 100%;
   width: 25%;
 }
 
