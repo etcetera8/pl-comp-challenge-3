@@ -50,6 +50,12 @@ body {
   color: #fff;
 }
 
+.li-target {
+  border-left: 3px solid #378dcc;
+  background: #455866;
+  color: #fff;
+}
+
 /*for all figs*/
 figure {
   margin: 0;
@@ -137,13 +143,18 @@ main {
 #hamburger-div {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   border-right: 1px solid #c4c4c4;
   height: 100%;
   color: #c4c4c4;
   cursor: pointer;
   transition: background 0.5s,
               color 0.5s;  
+}
+
+.fa-caret-left {
+  flex:1;
+  color: #46A1EC;
 }
 
 #hamburger-div:hover {
