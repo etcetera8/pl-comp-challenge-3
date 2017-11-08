@@ -4,7 +4,7 @@ body {
   display: flex;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -34,8 +34,8 @@ body {
 .nav-list {
   list-style: none;
   color: #c4c4c4;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list li {
@@ -47,7 +47,7 @@ body {
 
 .nav-list li:hover {
   background: #455866;
-  border-left:3px solid #378dcc;
+  border-left: 3px solid #378dcc;
   color: #fff;
 }
 
@@ -73,8 +73,8 @@ figcaption {
   flex-direction: column;
 }
 
-.profile-pic{
-  border-radius:50%;
+.profile-pic {
+  border-radius: 50%;
   background-image: url("images/deniro.jpg");
   background-size: cover;
   width: 100px;
@@ -96,11 +96,12 @@ figcaption {
 .category-nav {
   border-bottom: none;
 }
-
+ 
 .c-box {
   border-radius: 15%;
   height: .8em;
 }
+
 #c1 {
   color: yellow;
   height: .7em;
@@ -122,7 +123,7 @@ figcaption {
 }
 
 main {
- flex:4.5;
+ flex: 4.5;
 }
 
 /*Search bar at top*/
@@ -146,7 +147,7 @@ main {
   display: flex;
   align-items: center;
   color: #c4c4c4;
-  border-right:1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
   transition: background 0.5s,
               color 0.5s;  
 }
@@ -154,10 +155,10 @@ main {
 #hamburger-div:hover {
   background: #51adef;
   color: #fff;  
-}
+} 
 
 #search-bar {
-  flex:1;
+  flex: 1;
   border: none;
   width: 270px;
   padding-left: 5px;
@@ -165,7 +166,7 @@ main {
 }
 
 input::-webkit-input-placeholder {
-  color:#c4c4c4;
+  color: #c4c4c4;
   font-size: .8em;
 }
 
@@ -176,12 +177,12 @@ input::-webkit-input-placeholder {
 }
 
 .nav-sq {
-  margin:0;
-  border-left:1px solid #c4c4c4;
+  margin: 0;
+  border-left: 1px solid #c4c4c4;
   display: flex;
   align-items: center;
-  padding:0 22px;
-  color:#c4c4c4;
+  padding: 0 22px;
+  color: #c4c4c4;
   transition: background 0.5s,
               color 0.5s;
 }
@@ -198,9 +199,10 @@ input::-webkit-input-placeholder {
 }
 
 .job-title {
-  color:#666;
+  color: #666;
   margin-bottom: 0;
 }
+
 .location-list {
   display: flex;
   justify-content: space-between;
@@ -209,7 +211,7 @@ input::-webkit-input-placeholder {
 .location {
   align-self: center;
   color: #666;
-  margin:0;
+  margin: 0;
 }
 
 .location a {
@@ -218,8 +220,10 @@ input::-webkit-input-placeholder {
 }
 
 .rando-icons {
+  display: flex;
+  align-items: center;
   color: #666;
-  margin:0;
+  margin: 0;
 }
 
 #open-status {
@@ -227,17 +231,17 @@ input::-webkit-input-placeholder {
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 22px;
-  padding: 8px 15px 6px 12px;
-  margin: 0;
+  padding: 0px 10px;
+      margin: 0;
 }
 
 .fa-circle {
-  color:#26d80a;
+  color: #26d80a;
   margin: 6px;
 }
 
 .rando-icons li {
-  display:inline;
+  display: inline;
   margin: 0 4px;
   color: #c4c4c4;
   font-size: .7em;
@@ -250,10 +254,9 @@ input::-webkit-input-placeholder {
 }
 
 /*GRAPH LIST*/
-
 #graph-list {
-  margin:0;
-  padding-left:50px;
+  margin: 0;
+  padding-left: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -264,7 +267,7 @@ input::-webkit-input-placeholder {
   font-weight: 900;
   font-size: .6em;
   color: #c4c4c4;
-  padding-bottom:15px;
+  padding-bottom: 15px;
   margin-right: 45px;
   transition: color 0.5s,
               border-bottom 0.5s;
@@ -283,7 +286,7 @@ input::-webkit-input-placeholder {
   padding: 50px;
 }
 
-#graph-display{
+#graph-display {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -292,7 +295,7 @@ input::-webkit-input-placeholder {
 .circle-graphs {
   flex:1;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -302,18 +305,16 @@ input::-webkit-input-placeholder {
   border-right-color: #c4c4c4;
 }
 
-
 .circle-b {
   border: 12px solid #3D97E9;
-  border-left-color:#c4c4c4;
-  border-top-color:#c4c4c4;
+  border-left-color: #c4c4c4;
+  border-top-color: #c4c4c4;
   margin: 0 1px;
-
 }
 
 .circle-c {
   border: 12px solid #c16be5;
-  border-left-color:#c4c4c4;
+  border-left-color: #c4c4c4;
 }
 
 .circ-text {
@@ -321,7 +322,7 @@ input::-webkit-input-placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width:150px;
+  width: 150px;
   height: 150px;
   border-radius: 50%;
 }
@@ -330,17 +331,15 @@ input::-webkit-input-placeholder {
   margin: 5px 0;
   font-size: 1.5em;
   font-family: 'Saira', sans-serif;
-  color:#444;
+  color: #444;
 }
 
 .num-stats {
-  margin:0;
+  margin: 0;
   font-size: .6em;
-  color:#444;
+  color: #444;
   font-weight: bold;
-
 }
-
 
 .bar-graph {
   display: flex;
@@ -350,10 +349,11 @@ input::-webkit-input-placeholder {
 }
 
 img {
-  width:50%;
+  width: 50%;
   min-width: 250px;
   min-height: auto;
 }
+
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -363,18 +363,17 @@ img {
 .total-btns {
   font-size: .6em;
   font-weight: 900;
-  color:#666;
+  color: #666;
   padding: 7px;
-  border-radius:25px;
-  width:16%;
+  border-radius: 25px;
+  width: 16%;
 }
 
 .total-btns-alt {
-  display:none;
+  display: none;
 }
 
 /*Toggle Graph button border*/
-
 h2 {
   overflow: hidden;
   text-align: center;
@@ -417,7 +416,7 @@ h2:after {
 }
 
 .job-table {
-  flex:2;
+  flex: 2;
 }
 
 table {
@@ -441,15 +440,15 @@ th {
 .edit-btn {
   background: #567689;
   color: #c4c4c4;
-  border:none;
+  border: none;
 }
 
-.edit-btn i{
+.edit-btn i {
   color: #c4c4c4;
 }
 
 .edit-btn-fig {
-  margin:5px;
+  margin: 5px;
 }
 
 #pencil:before {
@@ -458,16 +457,16 @@ th {
 }
 
 tr {
-  border-bottom:1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 td {
-  padding:24px 0;
+  padding: 24px 0;
   vertical-align: middle;
 }
 
 .col-1 {
-  width:125px;
+  width: 125px;
   font-family: 'Exo', sans-serif;
   font-weight: 900;
   font-size: 0.5em;
@@ -485,53 +484,49 @@ td {
   vertical-align: top;
 }
 
-.tr-target{
+.tr-target {
   border-bottom: none;
 }
 
 .td-target {
-  color:#666;
+  color: #666;
   font-weight: bold;
 }
 
-
-
 /*Social sharing and share links*/
-
 .social {
-  flex:1;
+  flex: 1;
 }
 
 .social-btn-style {
   display: block;
-  color:white;
+  color: #fff;
   padding: 0 15px;
-  border-radius:3px;
+  border-radius: 3px;
   width: 90%;
-  margin:0 0 10px auto;
+  margin: 0 0 10px auto;
   height: 35px;
   font-size: .6em;
   letter-spacing: .5px;
 }
 
 .in-btn-fa {
-  float:left;
+  float: left;
 }
 
 .fb-btn {
-  background:#4768AD;
+  background: #4768AD;
 }
 
 .twitter-btn {
-  background:#46A1EC;
+  background: #46A1EC;
 }
 
 .linkedIn-btn {
-  background:#2C72AC;
+  background: #2C72AC;
 }
 
 /*Share Links*/
-
 .share-manual {
     width: 90%;
     margin: 25px 0 20px auto;
@@ -550,18 +545,18 @@ td {
   display: inline;
   margin-left: 10px;
   font-size: .9em;
-  color:#666;
+  color: #666;
 }
 
 .share-fa:before {
   font-size: .8em;
-  color:#666;
+  color: #666;
 }
 
 .share-info {
   font-size: .7em;
-  color:#666;
-  margin-bottom:20px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .share-link-wrapper {
@@ -570,33 +565,32 @@ td {
   margin-bottom: 10px;
 }
 
-.share-link{
-  border:none;
+.share-link {
+  border: none;
   height: 100%;
-  width:75%;
+  width: 75%;
   font-size: .7em;
   padding-left: 10px;
-  color:#666;
+  color: #666;
 }
 
 .copy-btn {
   border: none;
   background: #6bc6ae;
-  color:white;
-  padding:0 15px;
+  color: #fff;
+  padding: 0 15px;
   font-size: .6em;
   height: 100%;
-  width:25%;
+  width: 25%;
 }
 
-.email-resume{
+.email-resume {
   width: 100%;
   height: 35px;
 }
 
 /*media queries*/
 @media (max-width: 1095px) {
-
   #details {
     display: flex;
     flex-direction: column;
@@ -605,11 +599,11 @@ td {
 
   #graph-list {
     margin-top: 50px;
-    margin-right:75px;
-    padding-left:50px;
+    margin-right: 75px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
-    float:left;
+    float: left;
     position: absolute;
   }
 
@@ -655,7 +649,7 @@ td {
   }
 
   .total-btns{
-    width:100%;
+    width: 100%;
   }
 
   .total-btns-alt {
@@ -663,16 +657,15 @@ td {
     display: inline-block;
     font-size: .6em;
     font-weight: 900;
-    color:#666;
+    color: #666;
     padding: 7px;
-    border-radius:25px;
-    width:25%;
-    margin-top:35px;
+    border-radius: 25px;
+    width: 25%;
+    margin-top: 35px;
   }
 }
 
 @media (max-width: 845px) {
-
   .location-list {
     display: flex;
     flex-direction: column;
@@ -711,7 +704,6 @@ td {
 }
 
 @media (max-width: 785px) {
-
   .navbar {
     display:none;
     min-width:75%;
@@ -731,5 +723,4 @@ td {
     position: absolute;
     z-index: -1;
   }
-
 }
