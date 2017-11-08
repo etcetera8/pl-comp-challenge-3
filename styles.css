@@ -601,13 +601,18 @@ td {
     flex-direction: column-reverse;
   }
 
+  img {
+    margin-left: 150px;
+    min-height: 250px;
+  }
+
   .bar-graph {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
 
   .circle-graphs {
     margin-top: 50px;
@@ -638,8 +643,8 @@ td {
     color: #666;
     padding: 7px;
     border-radius: 25px;
-    width: 25%;
     margin-top: 35px;
+    width: 25%;
   }
 }
 
@@ -662,7 +667,7 @@ td {
 
   #job-description {
     flex-direction: column;
-}
+  }
   
   .social {
     display: flex;
@@ -671,25 +676,25 @@ td {
   }
 
   .social-btn-style {
-    margin:20px auto;
+    margin: 20px auto;
     width: 100%;
   }
 
   .share-manual {
-    margin:20px auto;
+    margin: 20px auto;
     width: 100%;
   }
 }
 
 @media (max-width: 785px) {
   .navbar {
-    display:none;
-    min-width:75%;
-    flex:2;
+    display: none;
+    min-width: 75%;
+    flex: 2;
   }
 
   #details {
-    padding:50px 20px;
+    padding: 50px 20px;
   }
 
   #graph-list {
@@ -700,5 +705,22 @@ td {
     flex:1;
     position: absolute;
     z-index: -1;
+  }
+}
+
+@media (max-width: 545px) {
+  .circle-graphs {
+    flex-direction: column;
+  }
+
+  .circ-text {
+    margin: 20px 0;
+    width:250px;
+    height: 250px;
+    border-width: 20px;
+  }
+
+  .total-target {
+    width: 100%;
   }
 }
