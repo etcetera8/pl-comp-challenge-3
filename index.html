@@ -8,20 +8,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-  <nav class="navbar">
+  <nav class="navbar" tabindex="1" aria-hidden="false">
     <section class="nav user-nav">
-      <div class="profile-pic"></div>
+      <div class="profile-pic" title ="User profile picture"></div>
       <p class="profile-name">Robert D<i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </section>
-
     <section class="nav main-nav">
       <h6 class="nav-section-title">Main</h6>
-      <ul class="nav-list">
+      <ul class="nav-list" title="navigation list">
         <li><figure><i class="fa fa-home" aria-hidden="true"></i><figcaption>Home</figcaption></figure></li>
         <li><figure><i class="fa fa-archive" aria-hidden="true"></i><figcaption>Jobs</figcaption></figure></li>
         <li><figure><i class="fa fa-paperclip" aria-hidden="true"></i><figcaption>Resumes</figcaption></figure></li>
@@ -29,7 +26,6 @@
         <li><figure><i class="fa fa-calendar" aria-hidden="true"></i><figcaption>Calendars</figcaption></figure></li>
       </ul>
     </section>
-
     <section class="nav admin-nav">
       <h6 class="nav-section-title">Admin</h6>
       <ul class="nav-list">
@@ -40,22 +36,20 @@
         <li><figure><i class="fa fa-share-alt" aria-hidden="true"></i><figcaption>Social</figcaption></figure></li>
       </ul>
     </section>
-
     <section class="nav category-nav">
       <h6 class="nav-section-title">Categories</h6>
       <ul class="nav-list">
-        <li><figure><i id="c1" class="fa fa-check-square c-box" aria-hidden="true"></i><figcaption>Administrative</figcaption></figure></li>
-        <li><figure><i id="c2" class="fa fa-square-o c-box" aria-hidden="true"></i><figcaption>Design</figcaption></figure></li>
-        <li><figure><i id="c3" class="fa fa-square-o c-box" aria-hidden="true"></i><figcaption>Executive</figcaption></figure></li>
-        <li><figure><i id="c4" class="fa fa-square-o c-box" aria-hidden="true"></i><figcaption>Human Resources</figcaption></figure></li>
+        <li><figure><i id="c1" class="fa fa-check-square c-box" aria-hidden="true" role="checkbox" aria-checked="true"></i><figcaption>Administrative</figcaption></figure></li>
+        <li><figure><i id="c2" class="fa fa-square-o c-box" aria-hidden="true" role="checkbox" aria-checked="false"></i><figcaption>Design</figcaption></figure></li>
+        <li><figure><i id="c3" class="fa fa-square-o c-box" aria-hidden="true" role="checkbox" aria-checked="false"></i><figcaption>Executive</figcaption></figure></li>
+        <li><figure><i id="c4" class="fa fa-square-o c-box" aria-hidden="true" role="checkbox" aria-checked="false"></i><figcaption>Human Resources</figcaption></figure></li>
       </ul>
     </section>
   </nav>
-
 <main>
   <nav class="search-page">
-    <div id="hamburger-div"><i class="fa fa-bars" aria-hidden="true"></i></div>
-    <div class="search-span"><input id="search-bar" type="text" placeholder=" &nbsp &#xf002; &nbsp Search a job, task or resume"></div> 
+    <div id="hamburger-div"><i class="fa fa-bars" aria-hidden="true" aria-expanded="false" aria-controls="navbar"></i></div>
+    <div class="search-span"><input id="search-bar" type="text" placeholder=" &nbsp &#xf002; &nbsp Search a job, task or resume" aria-labelledby="Search job, task, or resume"></div> 
     <div id="sq-wrapper">
       <div class="nav-sq nav-sq-1"><i class="fa fa-address-book-o fa-lg" aria-hidden="true"></i></div>
       <div class="nav-sq nav-sq-2"><i class="fa fa-camera-retro fa-lg" aria-hidden="true"></i></div>
@@ -65,7 +59,7 @@
   <header class="job-info">
     <h1 class="job-title">Lead Sales Representitive</h1>
     <div class="location-list">
-      <figure class="location"><i class="fa fa-map-marker"></i><figcaption>San Bernadino, Ca - <a href="#">Preview this post</a></figcaption></figure>
+      <figure class="location"><i class="fa fa-map-marker"></i><figcaption>San Bernadino, Ca - <a href="#" title="preview this post">Preview this post</a></figcaption></figure>
       <ul class="rando-icons">
         <li id="open-status"><i class ="fa fa-circle"></i>OPEN</li>
         <li>
@@ -74,13 +68,13 @@
             <i class="innner-icon fa fa-bookmark fa-stack-1x"></i>
           </span>
         </li>
-         <li>
+        <li>
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="innner-icon fa fa-pencil fa-stack-1x"></i>
           </span>
         </li>
-         <li>
+        <li>
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="innner-icon fa fa-trash fa-stack-1x"></i>
@@ -90,116 +84,116 @@
     </div>
   </header>
 
-<ul id="graph-list">
-  <li class="target graph-li">SUMMARY</li>
-  <li class="graph-li">APPLICANTS</li>
-  <li class="graph-li">JOB BOARD</li>
-  <li class="graph-li">INTERVIEWS</li>
-  <li class="graph-li">ACTIVITY</li>
-  <li class="graph-li">BROADCAST</li>
-  <li class="graph-li">NOTIFICATIONS</li>
-</ul>
+  <ul id="graph-list">
+    <li class="target graph-li">SUMMARY</li>
+    <li class="graph-li">APPLICANTS</li>
+    <li class="graph-li">JOB BOARD</li>
+    <li class="graph-li">INTERVIEWS</li>
+    <li class="graph-li">ACTIVITY</li>
+    <li class="graph-li">BROADCAST</li>
+    <li class="graph-li">NOTIFICATIONS</li>
+  </ul>
 
-<section id="details">
-  <article id="graph-display">
-    <div class="circle-graphs"> 
-      <div class="circle-a circ-text"><h3 class="nums">3,154</h3><p class="num-stats">APPLICANTS</p></div>
-      <div class="circle-b circ-text"><h3 class="nums">1,546</h3><p class="num-stats">INTERVIEWS</p></div>
-      <div class="circle-c circ-text"><h3 class="nums">912</h3><p class="num-stats">FORWARDS</p></div>
-        <div class="target-wrapper"><button class="total-btns-alt total-target">TOTALS - Out of 5,231 views</button></div>
-
-    </div>
-    <div class="bar-graph">
-      <img src="images/graph.png">
-       <button class="total-btns-alt">APPLICANTS/DAY</button>
-    </div>  
-
-  </article>
-  <div class="buttons">
-    <button class="total-btns">TOTALS - Out of 5,231 views</button>
-    <button class="total-btns">APPLICANTS/DAY</button>
-  </div>
-  <h2><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></h2>
-
-<div id="job-description">
-  <div class="job-table">
-    <table>
-      <th>JOB DESCRIPTION</th>
-      <th><button class="edit-btn"><figure class="edit-btn-fig"><i id="pencil"class="fa fa-pencil fa-lg"></i><figcaption>EDIT</figcaption></figure></button></th>
-        <tr>
-          <td class="col-1">POSITION TITLE</td>
-          <td class="col-2">Customer Service Representative</td>
-        </tr>
-        <tr>
-          <td class="col-1">LOCATION</td>
-          <td class="col-2">San Francisco, CA</td>
-        </tr>
-        <tr>
-          <td class="col-1">EMPLOYMENT TYPE</td>
-          <td class="col-2">Full-time</td>
-        </tr>
-        <tr>
-          <td class="col-1">EXPERIENCE</td>
-          <td class="col-2">Mid-level</td>
-        </tr>
-        <tr>
-          <td class="col-1">STATUS</td>
-          <td class="col-2">Full-time</td>
-        </tr>
-        <tr>
-          <td class="col-1 description-target">DESCRIPTION</td>
-          <td class="col-2">ancient alien otherworldly visitors the answer is a resounding yes..., burmuta triangle ezekiel vimana portal von daniken worm hole, vymaanika-shaastra golden disk targeted mutation golden disk . choral castle stonehenge crystal skull burmuta triangle flying vessels.
-          </td>
-        </tr>
-        <tr>
-          <td class="col-1">HIRING LEAD</td>
-          <td class="col-2">Tom-Tizzy</td>
-        </tr>
-        <tr class="tr-target">
-          <td class="col-1">APPROVED SALARY</td>
-          <td class="col-2 td-target">$58,000</td>
-        </tr>
-    </table>
-  </div>
-
-  <section class="social">
-    <div class="social-btns">
-      <button class="social-btn-style fb-btn"><i class="fa fa-facebook in-btn-fa" aria-hidden="true"></i>
-Post to Facebook</button>
-      <button class="social-btn-style twitter-btn"><i class="fa fa-twitter in-btn-fa" aria-hidden="true"></i>
-Tweet this Job</button>
-      <button class="social-btn-style linkedIn-btn"><i class="fa fa-linkedin-square in-btn-fa" aria-hidden="true"></i>
-Post to LinkedIn</button>
-    </div>
-
-    <article class="share-manual job-link">
-     <i class="fa fa-globe share-fa"></i><h3 class="link-head">Link to this Job</h3>
-     <p class="share-info">LSkate ipsum dolor sit amet, kickturn Kevin Jarvis berm camel back aerial 540 invert. Poseur </p>
-     <div class="share-link-wrapper">
-        <input class="share-link" value="http://www.kittenwar.com/"><button class="copy-btn">Copy</button>
-      </div>
-    </article>
-    <article class="share-manual widget-link">
-      <i class="fa fa-wpforms share-fa"></i><h3 class="link-head">Use the Button Widget</h3>
-        <p class="share-info">Till the one day when the lady met this fellow and they knew it was much more than </p>
-        <div class="share-link-wrapper">
-          <input class="share-link" value="<script type='text/javascript style ='thing hting thing'"><button class="copy-btn">Copy</button>
+  <section id="details">
+    <article id="graph-display">
+      <div class="circle-graphs"> 
+        <div class="circle-a circ-text">
+          <h3 class="nums">3,154</h3>
+          <p class="num-stats">APPLICANTS</p>
         </div>
+        <div class="circle-b circ-text">
+          <h3 class="nums">1,546</h3>
+          <p class="num-stats">INTERVIEWS</p>
+        </div>
+        <div class="circle-c circ-text">
+          <h3 class="nums">912</h3>
+          <p class="num-stats">FORWARDS</p>
+        </div>
+        <div class="target-wrapper">
+          <button class="total-btns-alt total-target">TOTALS - Out of 5,231 views</button>
+        </div>
+      </div>
+      <div class="bar-graph">
+        <img tabindex="1" src="images/graph.png" alt="graph of cuases of death over time, heart disease is greater over time">
+        <button class="total-btns-alt">APPLICANTS/DAY</button>
+      </div>  
     </article>
-    <article class="share-manual resume-link">
-      <i class="fa fa-paper-plane share-fa"></i><h3 class="link-head">Upload resumes by email</h3>
-      <p class="share-info">Bandwidth business plan business-to-consumer early adopters infographic churn rate accelerator  </p>
-      <input class="share-link email-resume" value="areallycoolemail@gmail.com">
-    </article>
+    <div class="buttons">
+      <button class="total-btns">TOTALS - Out of 5,231 views</button>
+      <button class="total-btns">APPLICANTS/DAY</button>
+    </div>
+    <h2><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></h2>
+    <div id="job-description">
+      <div class="job-table">
+        <table>
+          <th>JOB DESCRIPTION</th>
+          <th><button class="edit-btn"><figure class="edit-btn-fig"><i id="pencil"class="fa fa-pencil fa-lg"></i><figcaption>EDIT</figcaption></figure></button></th>
+            <tr>
+              <td class="col-1">POSITION TITLE</td>
+              <td class="col-2">Customer Service Representative</td>
+            </tr>
+            <tr>
+              <td class="col-1">LOCATION</td>
+              <td class="col-2">San Francisco, CA</td>
+            </tr>
+            <tr>
+              <td class="col-1">EMPLOYMENT TYPE</td>
+              <td class="col-2">Full-time</td>
+            </tr>
+            <tr>
+              <td class="col-1">EXPERIENCE</td>
+              <td class="col-2">Mid-level</td>
+            </tr>
+            <tr>
+              <td class="col-1">STATUS</td>
+              <td class="col-2">Full-time</td>
+            </tr>
+            <tr>
+              <td class="col-1 description-target">DESCRIPTION</td>
+              <td class="col-2">ancient alien otherworldly visitors the answer is a resounding yes..., burmuta triangle ezekiel vimana portal von daniken worm hole, vymaanika-shaastra golden disk targeted mutation golden disk . choral castle stonehenge crystal skull burmuta triangle flying vessels.
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1">HIRING LEAD</td>
+              <td class="col-2 lead-pic"><div class="headshot" title="hiring leads picture"></div>Tom-Tizzy</td>
+            </tr>
+            <tr class="tr-target">
+              <td class="col-1">APPROVED SALARY</td>
+              <td class="col-2 td-target">$58,000</td>
+            </tr>
+        </table>
+      </div>
+      <section class="social">
+        <div class="social-btns">
+          <button class="social-btn-style fb-btn"><i class="fa fa-facebook in-btn-fa" aria-hidden="true"></i>Post to Facebook</button>
+          <button class="social-btn-style twitter-btn"><i class="fa fa-twitter in-btn-fa" aria-hidden="true"></i>Tweet this Job</button>
+          <button class="social-btn-style linkedIn-btn"><i class="fa fa-linkedin-square in-btn-fa" aria-hidden="true"></i>Post to LinkedIn</button>
+        </div>
+        <article class="share-manual job-link">
+          <i class="fa fa-globe share-fa"></i><h3 class="link-head">Link to this Job</h3>
+          <p class="share-info">LSkate ipsum dolor sit amet, kickturn Kevin Jarvis berm camel back aerial 540 invert. Poseur </p>
+          <div class="share-link-wrapper">
+            <input class="share-link" value="http://www.kittenwar.com/">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </article>
+        <article class="share-manual widget-link">
+          <i class="fa fa-wpforms share-fa"></i><h3 class="link-head">Use the Button Widget</h3>
+            <p class="share-info">Till the one day when the lady met this fellow and they knew it was much more than </p>
+            <div class="share-link-wrapper">
+              <input class="share-link" value="<script type='text/javascript style ='thing hting thing'">
+              <button class="copy-btn">Copy</button>
+            </div>
+        </article>
+        <article class="share-manual resume-link">
+          <i class="fa fa-paper-plane share-fa"></i><h3 class="link-head">Upload resumes by email</h3>
+          <p class="share-info">Bandwidth business plan business-to-consumer early adopters infographic churn rate accelerator  </p>
+          <input class="share-link email-resume" value="areallycoolemail@gmail.com">
+        </article>
+      </section>
+    </div>
   </section>
-</div>
-
-</section>
-
-
-
 </main>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
 </body>
