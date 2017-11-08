@@ -3,6 +3,7 @@
 ## Parker Lindley 1710 FEE
 
 This is my final static comp project for 1710 FE. 
+[View the webpage] (https://etcetera8.github.io/pl-comp-challenge-3/)
 
 Image of the original
 
