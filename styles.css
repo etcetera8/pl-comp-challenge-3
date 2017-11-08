@@ -251,6 +251,11 @@ input::-webkit-input-placeholder {
   margin: 0 4px;
   color: #c4c4c4;
   font-size: .7em;
+  transition: color 0.5s;
+}
+
+.rando-icons li:hover {
+  color: #63bbf9;
 }
 
 .fa-bookmark:before,
